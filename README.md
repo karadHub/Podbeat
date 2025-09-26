@@ -296,7 +296,7 @@ npm run preview
 
 ### Getting Help
 
-- Check the [GitHub Issues](https://github.com/natashaongiscoding/music-app/issues) for known problems
+- Check the [GitHub Issues](https://github.com/karadhub/podbeat/issues) for known problems
 - Podbeat includes comprehensive error handling and user-friendly error messages
 - Demo mode provides full functionality without requiring API setup
 
