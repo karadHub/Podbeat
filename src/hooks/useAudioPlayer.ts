@@ -211,19 +211,20 @@ export const useAudioPlayer = () => {
 
       try {
         // Check if track already has preview URL
+        let enhancedTrack;
         if ("preview_url" in track && track.preview_url) {
           console.log(
             "✅ Track already has preview URL:",
             track.preview_url.substring(0, 50) + "..."
           );
-          var enhancedTrack = track;
+          enhancedTrack = track;
         } else {
           // Try to enhance the track with MCP preview URL
           console.log(
             "🔄 MCP: Enhancing track with preview URL...",
             track.name
           );
-          var enhancedTrack = await mcpAudioService.enhanceTrackWithPreview(
+          enhancedTrack = await mcpAudioService.enhanceTrackWithPreview(
             track
           );
 
