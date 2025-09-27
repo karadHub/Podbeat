@@ -1,0 +1,51 @@
+---
+description: Defines the brand color system for the PodBeat app.
+globs: []
+alwaysApply: true
+---
+
+### Theme & Color System
+- Use NextWork Paper (#F8F5F1) as the primary light background color
+- Use NextWork Leather (#1B1918) as the primary dark background color
+- Use White (#FFFFFF) and Black (#000000) as supportive colors for text and borders
+- Choose 2 complementary accent colors from the palette for each component (10-20% usage)
+- Use Sand (#E5DCC7) for subtle highlights and secondary elements
+- Use Plum (#965ECD) for primary actions and important UI elements
+- Use Cornflower (#308DED) for secondary actions and links
+- Use Canary (#FEDD2D) for warnings and attention-grabbing elements
+- Use Pumpkin (#FA8A45) for success states and positive feedback
+- Use Emerald (#12CCA6) for special features and premium elements
+
+### Color Usage Guidelines
+- Apply accent colors sparingly (10-20% of total UI) to maintain visual balance
+- Use high contrast combinations: NextWork Paper with Black text, NextWork Leather with White text
+- Use accent colors for interactive elements: buttons, links, progress bars, and status indicators
+- Implement proper color accessibility with sufficient contrast ratios (WCAG AA minimum)
+- Use the color palette consistently across all components and pages
+- Create semantic color mappings: success (Pumpkin), warning (Canary), error (Plum), info (Cornflower)
+
+### Dark/Light Theme Implementation
+- Use NextWork Leather as the primary dark theme background
+- Use NextWork Paper as the primary light theme background
+- Implement smooth transitions between theme colors using CSS transitions
+- Use proper color inheritance for nested components
+- Ensure all text maintains proper contrast in both themes
+- Use accent colors consistently across both light and dark themes
+
+### Component-Specific Color Rules
+- **Buttons**: Use Plum for primary actions, Cornflower for secondary actions
+- **Cards**: Use subtle Sand borders and backgrounds for depth
+- **Progress bars**: Use Emerald for loading states, Pumpkin for completion
+- **Status indicators**: Use Canary for warnings, Pumpkin for success, Plum for errors
+- **Links**: Use Cornflower for standard links, Plum for important links
+- **Music player controls**: Use accent colors for play/pause buttons and progress indicators
+- **Queue items**: Use subtle Sand backgrounds for hover states
+- **Search results**: Use accent colors for highlighting and selection states
+
+### Accessibility & Contrast
+- Ensure minimum 4.5:1 contrast ratio for normal text
+- Ensure minimum 3:1 contrast ratio for large text
+- Test color combinations with color blindness simulators
+- Use color plus other visual indicators (icons, shapes) for important information
+- Implement proper focus states with high contrast colors
+- Use semantic color names in CSS custom properties for maintainability
