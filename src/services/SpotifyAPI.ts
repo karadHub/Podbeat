@@ -111,7 +111,7 @@ const getSpotifyToken = async (): Promise<string> => {
       message: 'Spotify client ID not configured',
       code: 'MISSING_CREDENTIALS',
       retryable: false,
-      context: { SPOTIFY_CLIENT_ID: !!SPOTIFY_CLIENT_ID }
+      // context intentionally omitted to avoid credential disclosure
     });
   }
 
